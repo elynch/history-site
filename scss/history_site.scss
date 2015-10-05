@@ -1,0 +1,57 @@
+@import 'variables';
+@import 'main-page';
+
+body{
+	background-color: rgb(30, 30, 30);
+     font-family: $paragraph;
+     color: $white;
+}
+
+.main-nav{
+     //float: right;
+     text-align: right;
+     padding: 12px 1.25% 15px 1.25%;
+
+     ul {
+          list-style: none;
+          display: inline;
+     }
+
+     li{
+          display: inline-block;
+          font-size: .875em;
+          margin-right: 15px;
+
+          a{
+               color: $white;
+               text-decoration: none;
+
+               &:hover{
+                    color: $colonial-red;
+               }
+          }
+
+     }
+
+}
+
+li.social-icons{
+     margin-right:5px;
+}
+
+li.social-icons.first-social{
+     margin-left: 20px;
+}
+
+.active{
+     @include border-bottom-style;
+     padding-bottom: 5px;
+     color: $colonial-red;
+}
+
+footer{
+     font-size: .625em;
+     text-align: center;
+     margin-bottom: 5px;
+     clear: both;
+}

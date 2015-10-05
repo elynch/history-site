@@ -1,0 +1,18 @@
+$white: #fff;
+$black: #000;
+$light-black: rgb(30, 30, 30);
+$colonial-red: #BB3631;
+
+
+//fonts
+$headline: 'Philosopher', sans-serif;
+$paragraph: 'Open Sans', sans-serif;
+
+//mixins
+@mixin border-style{
+	border-top: 1px solid $colonial-red;
+}
+
+@mixin border-bottom-style{
+	border-bottom: 1px solid $colonial-red;
+}

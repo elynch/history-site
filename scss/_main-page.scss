@@ -1,0 +1,64 @@
+.container{
+     @include border-style;
+     width: 100%;
+     margin: 0 0 10px 0;
+     height: 670px;
+     background: no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+
+     @media screen and (max-width: 1200px){
+          @include border-bottom-style;
+          border-top:none;
+     }
+}
+
+.main-header{
+     //@include border-style;
+     /*margin-top: -660px;
+     background: linear-gradient($colonial-red, rgba(30, 30, 30, .3) 2%),
+                  linear-gradient(rgba(30, 30, 30, .5), rgb(30,30,30) 60%);
+     background: rgba(30,30,30, .7);
+     opacity: 1;
+     height: 110px;*/
+
+     margin-top: 0;
+     background: linear-gradient(to top, rgba(30,30,30, 0), rgba(30,30,30, .6) 15%);
+                  //linear-gradient(rgba(30, 30, 30, .5), rgb(30,30,30) 60%);
+     //background: rgba(30,30,30, .7);
+     opacity: 1;
+
+     h1 {
+     padding: 12px 2.5%;
+     font-family: $headline;
+     font-size: 3em;
+     margin: 0;
+     /*display: inline-block;
+     float: left;*/
+     text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 2px 0 #b9b9b9,
+               0 2px 0 #aaa,
+               0 2px 1px rgba(0,0,0,.5),
+               0 0 5px rgba(0,0,0,.3),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
+     }
+
+     h2{
+          margin-top: 0;
+          margin-bottom:0;
+          font-size: 1em;
+          display: inline-block;
+          font-family: $headline;
+          padding: 0 2.5% 13px 2.5%;
+     }
+
+}
